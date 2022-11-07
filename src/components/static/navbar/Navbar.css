@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: aliceblue;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    
+}
+.logo{
+    font-size: 20px;
+  
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 75%;
+    font-size: 20px;
+    background-color: aliceblue;
+}
+.links span{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(158, 157, 157, 0.249);
+}
+
+@media (max-width: 700px){
+    .links{        
+        font-size: 10px;
+        padding: 20px
+    }
+    .links span{
+        padding: 10px;
+    }
+   
+}
+.text-decorate-none{
+    text-decoration: none;
+    color: black;
+    
+}
