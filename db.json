@@ -6,7 +6,7 @@
           "price": 249.99,
           "oldPrice": 349.99,
           "image": "https://imgcentauro-a.akamaihd.net/230x230/94313731.jpg",
-          "qtd": 1
+          "marca": "Nike"
         },
         {
           "id": "94313762",
@@ -14,7 +14,7 @@
           "price": 249.99,
           "oldPrice": 349.99,
           "image": "https://imgcentauro-a.akamaihd.net/230x230/94313762.jpg",
-          "qtd": 1
+          "marca": "Nike"
         },
         
         { 
@@ -22,56 +22,64 @@
           "name": "Tênis Nike Revolution 5",
           "price": 249.99,
           "oldPrice": 349.99,
-          "image": "https://imgcentauro-a.akamaihd.net/230x230/943137XQ.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/230x230/943137XQ.jpg",
+          "marca": "Nike"
         },
         {
           "id": "95077714",
           "name": "Tênis Asics Patriot 12 Noosa",
           "price": 199.99,
           "oldPrice": 279.99,
-          "image": "https://imgcentauro-a.akamaihd.net/230x230/95077714.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/230x230/95077714.jpg",
+          "marca": "Asics"
         },
         {
           "id": "9507779N",
           "name": "Tênis Asics Patriot 12 Noosa",
           "price": 199.99,
           "oldPrice": 279.99,
-          "image": "https://imgcentauro-a.akamaihd.net/230x230/9507779N.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/230x230/9507779N.jpg",
+          "marca": "Asics"
         },
         {
           "id": "92601102",
           "name": "Tênis Oakley Modoc Low 3.0",
           "price": 449.99,
           "oldPrice": 559.99,
-          "image": "https://imgcentauro-a.akamaihd.net/230x230/92601102.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/230x230/92601102.jpg",
+          "marca": "Oakley"
         },
         {
           "id": "9465450R",
           "name": "Tênis Nike Renew Run",
           "price": 279.99,
           "oldPrice": 399.99,
-          "image": "https://imgcentauro-a.akamaihd.net/230x230/9465450R.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/230x230/9465450R.jpg",
+          "marca": "Nike"
         },
         {
           "id": "95004531",
           "name": "Tênis Nike Quest 3",
           "price": 299.99,
           "oldPrice": 449.99,
-          "image": "https://imgcentauro-a.akamaihd.net/230x230/95004531.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/230x230/95004531.jpg",
+          "marca": "Nike"
         },
         {
           "id": "94672705",
           "name": "Tênis adidas Lite Racer 20",
           "price": 179.99,
           "oldPrice": 229.99,
-          "image": "https://imgcentauro-a.akamaihd.net/230x230/94672705.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/230x230/94672705.jpg",
+          "marca": "adidas"
         },
         {
           "id": "92456602",
           "name": "Tênis Infantil Puma Wired",
           "price": 179.99,
           "oldPrice": 209.99,
-          "image": "https://imgcentauro-a.akamaihd.net/230x230/92456602.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/230x230/92456602.jpg",
+          "marca": "Puma"
         },
         {
           "id": "94461431",

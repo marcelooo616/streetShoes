@@ -1,0 +1,61 @@
+.container-sales{
+    display:flex ; 
+    height: 100%;
+}
+.sales-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.sales-img img{
+    width: 300px;
+}
+.prod-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px;
+    background-color: aliceblue;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.prod-details .nome{
+    margin: 20px;
+}
+
+.prod-details .nome span{
+    font-size: 35px;
+}
+
+.prod-details .marca{
+    margin: 20px;
+}
+.prod-details .marca span{
+    font-size: 30px;
+} 
+
+.prod-details .price{
+    margin: 20px;
+}
+.prod-details .price span{
+    font-size: 50px;
+}
+.section-button-add{
+    display: flex;
+    justify-content: space-around;
+}
+.section-button-add button{
+    text-decoration: none;
+    border: none;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+.section-button-add button h1{
+    font-size: 50px;
+    
+}
