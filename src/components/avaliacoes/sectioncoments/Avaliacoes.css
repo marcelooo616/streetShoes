@@ -1,0 +1,16 @@
+
+.conteudo{
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+}
+.container-nota div{
+    
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    
+}
+
+

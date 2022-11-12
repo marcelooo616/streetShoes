@@ -1,0 +1,22 @@
+.container-feedback{
+    display: flex;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(63,94,251);
+    background: linear-gradient(180deg, rgba(63,94,251,1) 1%, rgba(0,0,0,1) 100%);
+}
+.feedback form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    width:100%;
+  
+}
+.feedback form input{
+    height: 45px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+

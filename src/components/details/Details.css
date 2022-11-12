@@ -1,0 +1,17 @@
+.container-details{
+    margin: 50px;
+    font-size: 10px;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+    background-color:aliceblue ;
+}
+.container-details .description{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container-details .description span{
+    font-size: 20px;
+}

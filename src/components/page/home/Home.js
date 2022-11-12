@@ -1,32 +1,31 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Product from '../../product/Product';
 import './Home.css';
-export default function Home(props) {
+import Carousel from '../../carousel/carousel';
+
+
+export default function Home() {
+
     const [ productList, setProductList ] = useState([]);
-    const [ busca, setBusca ] = useState([]);
-    
-    
-   
-    const buscaFiltrada = productList.filter((productList) => productList.toString().includes(busca));
-    console.log(setBusca);
-     useEffect(() => {
+
+
+useEffect(() => {
     const url = process.env.REACT_APP_BACKEND_URI;
     const promise = axios.get(`${url}/products`);
-    
     promise.then(response => {
         setProductList(response.data);
     });
     promise.catch(e => {
-        alert("deu efsdf");
+        alert("deu rum");
     })
 }, [])
 
 
 
-
 function buildProductList(){
-    return buscaFiltrada.map((productList) => {
+    return productList.map((productList) => {
         return  (
             <Product
             id={productList.id}
@@ -45,12 +44,56 @@ function buildProductList(){
 
     return(
         <div className="container-home">
-           <input type="text" value={busca} onChange={(ev) => setBusca(ev.target.value) }/>
+                <div >
+                    <Carousel/>
+                </div>
+            <div className='container-card'>
+                
+                <div className='card' >
+                    <Link to='/nike'>
+                        <img src='https://i.imgur.com/UEjb7zt.png'/>
+                    </Link>            
+                </div>
+                
+                <div className='card'>
+                    <Link to='/Asics'>
+                        <img src='https://i.imgur.com/bJp73XM.png'/>
+                    </Link>            
+                </div>
+                
+                <div className='card'>
+                    <Link to='/Oakley'>
+                        <img src='https://i.imgur.com/heVG7PN.png'/>
+                    </Link>            
+                </div>
+                
+                <div className='card'>
+                    <Link to='/adidas'>
+                        <img src='https://i.imgur.com/AXqba2J.png'/>
+                    </Link>            
+                </div>
+                
+                <div className='card'>
+                    <Link to='/Puma'>
+                        <img src='https://i.imgur.com/QQnI2aU.png'/>
+                    </Link>            
+                </div>
+                
+                <div className='card'>
+                    <Link to='/Mizuno'>
+                         <img src='https://i.imgur.com/R2iyrHX.png'/>
+                    </Link>            
+                </div>
+                <div className='card'>
+                    <Link to='/Fila'>
+                         <img src='https://i.imgur.com/sPh7NmW.png'/>
+                    </Link>            
+                </div>
+            </div>              
             <div className="products-items" key={products.id}>
               {products}            
-            </div>
+            </div>           
         </div>
-
     );
     
 };

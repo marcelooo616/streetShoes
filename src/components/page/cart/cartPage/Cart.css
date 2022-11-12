@@ -1,0 +1,79 @@
+.container-cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%,
+                                        rgba(0,0,0,1) 100%);
+}
+
+.list-prod-cart{
+    border-radius: 20px;
+    width: 85%;
+    min-height: 50vh;
+    padding: 10px;
+    background-color: aliceblue;
+    
+}
+.container-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container-cart .cahsRegister{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.container-cart .cahsRegister h1{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.formulario-compras{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 75px;
+    border-radius: 20px;
+    width: 65%;
+    background-color: rgb(213, 223, 223);
+}
+.container-form input{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 45px;
+}
+.container-form .text-form{
+    padding: 20px;
+    background-color: black;
+    border-radius: 20px 20px 0px 0px;
+    color: aliceblue;
+}
+.container-form .formulario-compras button{
+    background-color: black;
+    width: 175px;
+    height: 50px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+.button-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
