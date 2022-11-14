@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import axios from "axios";
 import CartContext from "../../../../contexts/CartContext";
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 import './FormBuy.css';
 
 export default function FormBuy(){
@@ -43,9 +44,29 @@ export default function FormBuy(){
 
         const promise = axios.post(`${process.env.REACT_APP_BACKEND_URI}/orders`, order);
         promise.then(() =>  {
-            alert("Compra finalizada!!")} );         
+            toast.info("Compra finalizada!!", {
+                position: "top-right",
+                autoClose:2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
+            } );         
         promise.catch(e => {
-            alert("deu ruim kkkkkk")
+            toast.errors("Deu ruim kk!!", {
+                position: "top-right",
+                autoClose:2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
+            
         })
     }
 

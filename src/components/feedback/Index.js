@@ -4,12 +4,13 @@ import axios from 'axios';
 import './Feedback.css';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
+import { toast } from 'react-toastify';
 import * as yup from "yup";
 
 
 
 const validationPost = yup.object().shape({
-    ref: yup.string().required("Campo ID não podem estar vazios").min(9, "min 9 caracteres"),
+    ref: yup.string().required("Campo ID não podem estar vazios").min(8, "min 9 caracteres"),
     nome: yup.string().required("Campo nome não podem estar vazios").max(25, "Max de 25 caracteres"),
     opiniao: yup.string().required("Campo Avaliação não podem estar vazios").max(500, "Max 500 caracteres"),
 })
@@ -26,11 +27,30 @@ export function Feedback(){
 
     const onSubmit = value =>  axios.post(`${process.env.REACT_APP_BACKEND_URI}/feedback`, value)
     .then(() => {
-    console.log("Obrigado pelo Feedback")
+        toast.info("Obrigado pelo Feedback!!", {
+            position: "top-right",
+            autoClose:2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
+    
     navigate.push("/")
 })
 .catch(() => {
-    console.log("DEU ERRADO")
+    toast.errors("Desculpe augo deu muito errrado!!", {
+        position: "top-right",
+        autoClose:2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+    });
 })
 
 

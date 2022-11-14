@@ -19,6 +19,8 @@ import Cart from '../page/cart/cartPage/Index';
 import { Feedback } from '../feedback/Index';
 import ProductDetails from '../page/sales/productdetails/Index';
 import Account from '../page/cart/account/Index';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -28,6 +30,7 @@ function App() {
 
   return (
     <CartContext.Provider value={{cart, setCart, total, setTotal}}>
+      <ToastContainer/>
       <BrowserRouter>
         <Navbar/>
           <Routes>
