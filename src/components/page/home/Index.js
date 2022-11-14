@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Product from '../../product/Product';
+import Product from '../../product/Index';
 import './Home.css';
-import Carousel from '../../carousel/carousel';
+import Carousel from '../../carousel/Index';
 
 
 export default function Home() {
@@ -67,9 +67,9 @@ function buildProductList(){
                     </Link>            
                 </div>
                 
-                <div className='card'>
+                <div className='adidas'>
                     <Link to='/adidas'>
-                        <img src='https://i.imgur.com/AXqba2J.png'/>
+                        <img src='https://i.imgur.com/RN9i5Cy.gif'/>
                     </Link>            
                 </div>
                 
@@ -81,7 +81,7 @@ function buildProductList(){
                 
                 <div className='card'>
                     <Link to='/Mizuno'>
-                         <img src='https://i.imgur.com/R2iyrHX.png'/>
+                        <img src='https://i.imgur.com/R2iyrHX.png'/>
                     </Link>            
                 </div>
                 <div className='card'>

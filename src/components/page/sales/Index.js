@@ -1,15 +1,12 @@
 import { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { FaCartPlus } from 'react-icons/fa';
-import { BiArrowBack } from 'react-icons/bi';
+import { Feedback } from '../../feedback/Index';
 import axios from "axios";
-import './Sales.css';
-
 import CartContext from '../../../contexts/CartContext';
-import Details from '../../details/Details';
-import Avaliacoes from '../../avaliacoes/sectioncoments/Avaliacoes';
-import ProductDetails from './productdetails/ProductDetails';
-import { Feedback } from '../../feedback/Feedback';
+import Details from '../../details/Index';
+import Avaliacoes from '../../avaliacoes/sectioncoments/Index';
+import ProductDetails from './productdetails/Index';
+import './Sales.css';
 
 
 export default function Sales(props){
@@ -37,12 +34,12 @@ function attState(){
     setProduct(product.qtd = count)
 }
     const handleClick1 = () => {
-    // Counter state is incremented
+
     setCount(count + 1)
 }
 
     const handleClick2 = () => {
-    // Counter state is incremented
+  
     if(count <= 0 ){
         setCount(count = 0)
     }else{
@@ -63,34 +60,7 @@ function attState(){
         }           
     }
 
-
-    function addItem(id){
-        const copyCart = [...cart];
-
-        const item = copyCart.find((productOncart) => productOncart.id === id );
-        
-        if(!item){
-            copyCart.push({id:id, qtd:1});
-        }else{
-            item.qtd = item.qtd + 1;
-        }
-        setCart([...cart, product]);
-        console.log(cart)
-    }
-
-    function removeItem(id){
-        const copyCart = [...cart, product];
-        const item = copyCart.find((productOncart) => product.id === productOncart.id );
-
-        if(item.qtd > 1){
-            item.qtd = item.qtd - 1;
-            setCart(copyCart)
-        }else{
-            const arrayFiltered = copyCart.filter(product => product.id !== id);
-            setCart(arrayFiltered);
-        }
-    }
-
+    
     function backHome(){
         navigate("/home")
     }
@@ -100,8 +70,7 @@ function attState(){
         const avaliacao = { 
             id, 
             nome,
-            opiniao
-        
+            opiniao     
         }
         const promise = axios.post(`${process.env.REACT_APP_BACKEND_URI}/feedback`, avaliacao);
         promise.then(response => alert("Compra finalizada!!"));
@@ -139,7 +108,7 @@ function attState(){
         })
     }
 
-    const nota = buildProductList();
+    const rating = buildProductList();
     
 
     return(
@@ -169,7 +138,7 @@ function attState(){
                 /> 
             </div> 
             <div className='container-avaliacoes'>
-                    {nota}
+                    {rating}
                 <div className='titulo'>
                     <img src='https://i.imgur.com/LkdRVl4.png'/>
                     <img src='https://i.imgur.com/LkdRVl4.png'/>
@@ -179,8 +148,7 @@ function attState(){
                     <img src='https://i.imgur.com/LkdRVl4.png'/>
                     <img src='https://i.imgur.com/LkdRVl4.png'/>
                     <img src='https://i.imgur.com/LkdRVl4.png'/>
-                    <img src='https://i.imgur.com/LkdRVl4.png'/>
-                    
+                    <img src='https://i.imgur.com/LkdRVl4.png'/>             
                 </div>
                 
             </div>

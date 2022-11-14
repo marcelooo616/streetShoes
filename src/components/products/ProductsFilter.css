@@ -1,0 +1,27 @@
+.container-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+.img-nike{
+    width: 100%;
+}
+
+.img-nike img{
+    width: 100%;
+   
+
+}
+.img-adidas{
+    width: 100%;
+}
+
+.img-adidas img{
+    width: 100%;
+    height: 450px;
+    ;
+
+}
+

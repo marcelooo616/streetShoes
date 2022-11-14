@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Product from '../../components/product/Product';
+import Product from '../../components/product/Index';
 
 export default function Fila(){
 
@@ -38,6 +38,9 @@ export default function Fila(){
     const products = buildProductList();
     return(
         <div className="container-home">
+             <div className='img-nike'>
+                <img src='https://i.imgur.com/JCtNj2h.gif'/>
+            </div>
             <div className="products-items">
                 {products}            
             </div>

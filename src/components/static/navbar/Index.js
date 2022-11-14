@@ -12,7 +12,7 @@ export default function Navbar() {
     return(       
         <div className='container'>
                 <div className='logo'>
-                    <span>Streat Shoes</span>
+                    <span>Street Shoes</span>
                     <img src='https://i.imgur.com/FvCHhTU.png'/>
                 </div>
             <div className='navbar'>

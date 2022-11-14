@@ -3,6 +3,7 @@
     height: 750px;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
     background: rgb(63,94,251);
     background: linear-gradient(180deg, rgba(63,94,251,1) 1%, rgba(0,0,0,1) 100%);
 }
@@ -17,6 +18,34 @@
 .feedback form input{
     height: 45px;
     border-radius: 20px;
+    margin-bottom: 20px;
+}
+.error-message {
+    color: rgb(240, 47, 47);
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 1.2rem;
+
+    color: #D2DAF5;
+
+    font-family: Poppins;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+
+    font-size: 1.2rem;
+
+    padding-left: 15px;
+}
+.fields {
     margin-bottom: 20px;
 }
 

@@ -1,11 +1,14 @@
-import { Box, Grid } from "@mui/material";
-import './ProductDetails.css';
+
 import { FaCartPlus } from 'react-icons/fa';
 import { BiArrowBack } from 'react-icons/bi';
 import { BiChevronRight } from 'react-icons/bi';
 import { BiChevronLeft } from 'react-icons/bi';
+import './ProductDetails.css';
+
 export default function ProductDetails(props){
+
     const { id,image, name, marca, price, qtd, back,click1,click2, add } = props
+    
     return(
         <div className="container-sales">          
                 <div className='sales-img'>

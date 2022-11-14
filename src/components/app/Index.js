@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import Home from '../page/home/Home';
-import Sales from '../page/sales/Sales';
+import Home from '../page/home/Index';
+import Sales from '../page/sales/Index';
 import Adidas from '../products/adidas';
 import Asics from '../products/Asics';
 import Fila from '../products/Fila';
@@ -10,22 +10,24 @@ import Nike from '../products/Nike';
 import Oakley from '../products/Oakley';
 import Puma from '../products/Puma';
 
-import Footer from '../static/footer/Footer';
-import Navbar from '../static/navbar/Navbar';
+import Footer from '../static/footer/Index';
+import Navbar from '../static/navbar/Index';
 
 import CartContext from '../../contexts/CartContext';
 import './App.css';
-import Cart from '../page/cart/cartPage/Cart';
-import { Feedback } from '../feedback/Feedback';
-import ProductDetails from '../page/sales/productdetails/ProductDetails';
+import Cart from '../page/cart/cartPage/Index';
+import { Feedback } from '../feedback/Index';
+import ProductDetails from '../page/sales/productdetails/Index';
+import Account from '../page/cart/account/Index';
 
 
 
 function App() {
   const [ cart, setCart ] = useState([]);
+  const [total , setTotal ] = useState([]);
 
   return (
-    <CartContext.Provider value={{cart, setCart}}>
+    <CartContext.Provider value={{cart, setCart, total, setTotal}}>
       <BrowserRouter>
         <Navbar/>
           <Routes>
@@ -41,8 +43,8 @@ function App() {
             <Route path="/Fila" element={<Fila/>} ></Route>
             <Route path="/cart" element={<Cart/>}></Route>
             <Route path="/feedback" element={<Feedback/>} ></Route>
-            <Route path="/details" element={<ProductDetails/>} ></Route>
-            
+            <Route path="/details" element={<ProductDetails/>} ></Route>    
+            <Route path="/account" element={<Account/>} ></Route>       
           </Routes>
         <Footer/>
       </BrowserRouter>

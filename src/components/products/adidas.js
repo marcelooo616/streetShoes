@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Product from '../../components/product/Product';
+import Product from '../../components/product/Index';
 
 export default function Adidas(){
 
@@ -38,9 +38,17 @@ export default function Adidas(){
     const products = buildProductList();
     return(
         <div className="container-home">
+            <div className='img-adidas'>
+                <img src='https://i.imgur.com/wcrVcRQ.gif'/>
+            </div>
+           
             <div className="products-items">
                 {products}            
             </div>
+            <div className='img-adidas'>
+                <img src='https://i.imgur.com/JPhws9H.gif'/>
+            </div>
+            
         </div>
     );
 };

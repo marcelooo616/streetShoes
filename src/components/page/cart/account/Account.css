@@ -1,0 +1,41 @@
+.grid-container-account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgb(63,94,251);
+    background: linear-gradient(180deg, rgba(63,94,251,1) 1%, rgba(0,0,0,1) 100%);
+    
+}
+.grid-item-prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    margin: 10px;
+}
+.grid-account-items{
+    padding: 20px;
+    
+}
+.grid-account-items .box-conteudo{
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: rgb(231, 231, 231);
+    
+
+}
+.container-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-item-prod div{
+    display: flex;
+    flex-direction: column;
+}.grid-form{
+    height: 500px;
+}

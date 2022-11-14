@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Product from '../../components/product/Product';
+import Product from '../../components/product/Index';
+import './ProductsFilter.css';
 
 export default function Nike(){
     const [ productList, setProductList ] = useState([]);
@@ -41,8 +42,14 @@ export default function Nike(){
     const products = buildProductList();
     return(
         <div className="container-home">
+            <div className='img-nike'>
+                <img src='https://i.imgur.com/8slk648.gif'/>
+            </div>
             <div className="products-items">
                 {products}            
+            </div>
+            <div className='img-nike'>
+                <img src='https://i.imgur.com/OtDsywr.gif'/>
             </div>
         </div>
     );

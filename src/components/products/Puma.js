@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Product from '../../components/product/Product';
+import Product from '../../components/product/Index';
 
 export default function Puma(){
 
